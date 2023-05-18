@@ -1,0 +1,21 @@
+title: Le planqué
+authors:
+  - "[PandatiX](https://twitter.com/pandatix)"
+description: |
+    Voici un pptx qui semble contenir une information cachée. Retrouvez-la et vous gagnez.
+    Mais pour cela, il vous faudra connaître en profondeur pptx... ou non.
+level: easy
+value:
+  initial: 500
+  decay: 100
+  minimum: 50
+flags:
+  - 24HIUT{PpTX_ést_ùn_f0rma7_D'@rC#iv3}
+tags:
+  - powerpoint
+hints:
+  - text: Pour stocker autant d'informations, pptx n'utilise pas qu'un seul fichier. Pourtant, tout est contenu dans le .pptx... comme c'est bizarre.
+    value: 50
+kind: file
+files:
+  - Présentation.pptx

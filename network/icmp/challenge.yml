@@ -1,0 +1,25 @@
+title: Stealing data
+authors:
+  - NicolasFgrx
+description: |
+    L'administrateur réseau vient de nous signaler que des flux étranges étaient à destination d'un serveur. 
+    Visiblement, il s'agit d'un serveur interne. Vous pouvez nous dire de quoi il s'agit ?
+    
+    (La capture a été réalisée en dehors de l'infrastructure du CTF)
+level: medium
+value:
+  initial: 500
+  decay: 100
+  minimum: 50
+flags:
+  - 24HIUT{IcmpExfiltrationIsEasy}
+topics:
+  - Network
+hints:
+  - text: Vous ne trouvez pas qu'il ya beaucoup de requêtes ICMP ?
+    cost: 50
+  - text: Pour l'exo, le ttl a été modifié, tente un ip.ttl<=20
+    cost: 50
+kind: file
+files:
+  - icmp.pcap

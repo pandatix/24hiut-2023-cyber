@@ -1,0 +1,25 @@
+title: Casmir 
+authors:
+  - Teddysbears
+description: |
+    L'assembleur c'est tellement mieux que le C.
+    Tiens regarde tu vas trouver le flag direct GRACE A LA PUISSANCE DE L'ASSEMBLEUR HAHAHAHAHAH.
+
+level: easy
+value:
+  initial: 500
+  decay: 100
+  minimum: 50
+flags:
+  - 24HIUT{45M_83tt3r}
+tags:
+  - assembly
+  - C
+hints:
+  - text: Je sais pas si vous avez remarqué le il y a le code source avec l'assembleur.
+    cost: 10
+  - text: "Si vous voulez absolument assembler le fichier `casmir.s`, c'est possible. Le fichier a été généré avec les flags suivants : `-S -fverbose-asm -masm=intel`."
+    cost: 50
+kind: file
+files:
+  - casmir.s 

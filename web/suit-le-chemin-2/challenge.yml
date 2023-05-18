@@ -1,0 +1,35 @@
+title: Suit le chemin 2/2
+authors:
+  - Jejeroro
+description: |
+    La version 2 est sortie !!! 
+    Il ne faut toujours pas juger le design de l'interface mais par contre le path traversal explicite semble avoir été corrigé.
+    Arriverez-vous à contourner les nouveaux mécanismes mis en place pour arriver à vos fins ?
+level: medium
+value:
+  initial: 500
+  decay: 100
+  minimum: 50
+flags:
+  - 24HIUT{A_Pr0p3r_User_1nput_S4nit1zing_Is_Th3_K3y}
+topics:
+  - Web
+hints:
+  - text: Ce site web n'est pas conforme au RGPD. Un cookie a été déposé sans vous avoir demandé votre consentement.
+    cost: 50
+  - text: Les mécanismes de sécurité ajoutés pour cette étape bloquent l'utilisation d'un chemin absolu et bloquent la payload la plus utilisée pour remonter dans les répertoires. L'utilisation de la checksum n'apporte aucune sécurité au niveau de l'intégrité des fichiers et est présente juste pour vous embêter.
+    cost: 50
+connectionInfo: http://challenges.pandatix.dev:31006
+
+# Infra
+replicas: 1
+kind: static
+containers:
+  - name: suit-le-chemin
+    image: registry.pandatix.dev/web/suit-le-chemin:v2
+    ports:
+      - name: http
+        targetPort: 80
+        port: 82
+        nodePort: 32004
+        exposed: true

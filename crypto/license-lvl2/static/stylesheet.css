@@ -1,0 +1,58 @@
+body {
+    text-align: center;
+    background-color: #cccccc;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #050505;
+    word-wrap: break-word;
+}
+
+.register {
+    display: flex;
+    padding: 0 15%;
+}
+
+.registerLicense {
+    flex-grow: 1;
+    border: 3px solid;
+    padding: 5px;
+    height: 20px;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+    border-color: #26148f;
+}
+
+.button {
+    height: 36px;
+    border: 1px solid;
+    border-color: #26148f;
+    border-radius: 5px;
+    background: #26148f;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: inherit;
+    font-weight: bolder;
+}
+
+.registerButton {
+    border-radius: 0 5px 5px 0;
+}
+
+.card {
+    position: relative;
+    display: inline-block;
+    margin-top: 4vh;
+    padding: 20px 30px 50px;
+    background-color: #f0f0f0;
+    border-top: 5px solid #26148f;
+    box-shadow: 0 2px 6px hsla(0, 0%, 0%, 0.2);
+    width: 80vw;
+    max-width: 800px;
+}
+
+#error {
+    color: red;
+}

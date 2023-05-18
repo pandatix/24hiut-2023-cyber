@@ -1,0 +1,21 @@
+title: Drôle de plongeoir 2/3
+authors:
+  - "[baddhack](https://twitter.com/baddhack)"
+description: |
+  Parfois le week-end nous allions nous baigner à une dizaine de minutes de la ville. Je n'ai plus le nom du lieu mais j'ai le souvenir que mes parents me laissaient sauter dans cette piscine qui était remplie grâce à une source naturelle. Pendant ce temps ils étaient assis dans un restaurant juste à côté et je me souviens encore de cette odeur de viande grillée.
+  
+  Comment s'appelle ce restaurant déjà ?
+level: easy
+value:
+  initial: 500
+  decay: 100
+  minimum: 50
+flags:
+  - 24HIUT{مسبح و مطعم و کافیتریا سولاف}
+  - 24HIUT{Restaurant et cafeteria Sulaf}
+  - 24HIUT{Restaurant et cafeteria Silaf}
+  - 24HIUT{Restaurant et cafeteria Sulav}
+  - 24HIUT{Restaurant et cafeteria Silav}
+topics:
+  - GEOINT
+kind: none

@@ -1,0 +1,24 @@
+title: Guess my pass 
+authors:
+  - Teddysbears
+description: |
+    Je suis tellement intelligent j'ai crée l'algorithme le plus sécurisé de la planète Terre.
+    Personne ne trouvera jamais mon mot de passe.
+level: medium 
+value:
+  initial: 500
+  decay: 100
+  minimum: 50
+flags:
+  - 24HIUT{B35t_FunC_5tRncMp_r1ght?}
+tags:
+  - strncmp 
+  - crackme
+hints:
+  - text: Il n'est pas si intelligent que ça, l'agorithme est facilement remontable il suffit de regarder la fonction de comparaison. 
+    cost: 10
+  - text: Il peut être malin de placer des breakpoints à chaque comparaison pour savoir ce qui y est comparé.
+    cost: 50
+kind: file
+files:
+  - guessmypass 

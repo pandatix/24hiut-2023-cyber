@@ -1,0 +1,42 @@
+# Challenge
+title: Break The License 1/3
+authors:
+  - "[PandatiX](https://twitter.com/pandatix)"
+description: |
+    Bonjour, Agent C.
+    Nous avons pu mettre la main sur le code d'un serveur de license que nous souhaitons compromettre.
+    Votre mission sera de passer outre ses mécanismes pour nous générer des licenses standards.
+    Une fois cela fait, nous supposons qu'un certain code vous sera donné.
+    Bonne chance.
+level: easy
+value:
+  initial: 500
+  decay: 100
+  minimum: 50
+flags:
+  - 24HIUT{To0_W3ak_c#yp7o}
+tags:
+  - XOR
+hints:
+  - text: a XOR b = c, c XOR b = a, donc ... ?
+    cost: 50
+  - text: (clair XOR clé) XOR clé = clair
+    cost: 50
+connectionInfo: http://challenges.pandatix.dev:31001
+
+# Infra
+replicas: 1
+kind: static+file
+files:
+  - code.zip
+containers:
+  - name: license-server
+    image: registry.pandatix.dev/crypto/license-server:v1
+    ports:
+      - name: http
+        targetPort: 8080
+        port: 8082
+        nodePort: 32001
+        exposed: true
+
+# Via vurl : `curl http://challenges.pandatix.dev:32001 -k`

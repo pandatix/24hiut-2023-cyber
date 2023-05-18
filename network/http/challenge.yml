@@ -1,0 +1,23 @@
+title: HTTP Authentication
+authors:
+  - NicolasFgrx
+description: |
+    Oh non ! Je n'avais pas vu que ma connexion n'était pas chiffrée ! 
+    J'espère que personne ne m'espionnait...
+level: easy
+value:
+  initial: 500
+  decay: 100
+  minimum: 50
+flags:
+  - 24HIUT{Http_1s_n0t_s3cuR3}
+topics:
+  - Network
+hints:
+  - text: Les flux http ne sont pas chiffrés
+    cost: 50
+  - text: Les informations sont POSTées en HTTP :) 
+    cost: 50
+kind: file
+files:
+  - chall1.pcapng

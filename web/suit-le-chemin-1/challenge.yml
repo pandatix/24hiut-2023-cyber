@@ -1,0 +1,36 @@
+title: Suit le chemin 1/2
+authors:
+  - Jejeroro
+description: |
+    Cet utilisateur non averti a publié son blog sur internet alors que celui-ci est encore en cours de construction. Peut-être que certains mécanismes de sécurité de base n'ont pas été implémentés...
+    Saurez-vous accompagner le créateur du site sur le chemin de la sécurité ?
+level: easy
+value:
+  initial: 500
+  decay: 100
+  minimum: 50
+flags:
+  - 24HIUT{Th1s_Is_P4th_Trav3r5al}
+topics:
+  - Web
+hints:
+  - text: Le type de vulnérabilité à exploiter se trouve avoir l'identifiant 73 parmi les nombreuses CWE. Il faut parfois emprunter des chemins détournés pour atteindre son but.
+    cost: 50
+  - text: Le chemin du fichier dont on souhaite exfiltrer le contenu est indiqué quelque part dans la page principale du site. Savoir comment fonctionne la gestion des utilisateurs sur Linux est un point à ne pas négliger.
+    cost: 50
+connectionInfo: http://challenges.pandatix.dev:31005
+
+# Infra
+replicas: 1
+kind: static
+containers:
+  - name: suit-le-chemin
+    image: registry.pandatix.dev/web/suit-le-chemin:v1
+    ports:
+      - name: http
+        targetPort: 80
+        port: 81
+        nodePort: 32003
+        exposed: true
+
+# Via curl : `curl http://challenges.pandatix.dev:32003 -k`

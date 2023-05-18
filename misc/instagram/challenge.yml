@@ -1,0 +1,21 @@
+title: Instagram
+authors:
+  - "[PandatiX](https://twitter.com/pandatix)"
+  - NicolasFgrx
+description: |
+    Vous l'aurez remarqués, Donk'esport gère l'infrastructure. Toutefois, nous faisons beaucoup d'autres choses qu'il va falloir retrouver.
+    D'ailleurs, le nouveau bureau vous a laissé un message :D
+    
+    > Mon flag ? Je vous le laisse si vous voulez. Trouvez-le ! Je l'ai laissé quelque part dans ce monde !
+level: easy
+value:
+  initial: 500
+  decay: 100
+  minimum: 50
+flags:
+  - 24HIUT{@donkesport_sur_Instagram}
+tags:
+  - OSINT
+hints:
+  - text: Sérieusement ?? La réponse est visible depuis l'entrée du couloir...
+    cost: 1000

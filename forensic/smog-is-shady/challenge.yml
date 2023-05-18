@@ -1,0 +1,20 @@
+title: Smog is shady
+authors:
+  - "[baddhack](https://twitter.com/baddhack)"
+description: |
+  We have conducted a raid at the home of an individual who seem to be planning a bad move. We were able to seize his computer, you will find a copy of the disk.
+  We count on you to find information that would allow us to take action in time. Maybe a date or a location ? In short, hurry up.
+  P.S.: our agents have been working on a dictionary that could help you if you encounter difficulties.
+level: medium
+value:
+  initial: 500
+  decay: 100
+  minimum: 50
+flags:
+  - 24HIUT{h1dd3n_v0lum3s_4r3_us3ful}
+topics:
+  - Forensics
+kind: file
+files:
+  - disk.raw.zip
+  - wordlist.txt

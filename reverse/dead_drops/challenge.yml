@@ -1,0 +1,25 @@
+title: Dead drops 
+authors:
+  - Teddysbears
+description: |
+    Bonjour Agent C, afin d'être sûr que c'est bien à vous que nous avons affaire nous avons déposé dans des boîtes aux lettres mortes des questions que vous seul pouvez connaître. 
+    Répondez convenablement à ces questions et nous vous livrerons le flag. 
+    P.S.: n'oubliez pas de détruire les boîtes aux lettres après avoir répondu.
+level: hard 
+value:
+  initial: 500
+  decay: 100
+  minimum: 50
+flags:
+  - 24HIUT{8r4v0_4G3nt_V0tR3_1d3nT1te_35t_V4l1d3E}
+tags:
+  - inotify
+  - dead-drops
+hints:
+  - text: Toutes les strings sont chiffrées humm on peut les récupérer lors de l'exécution pour avoir une idée de ce qu'il se passe. 
+    cost: 50
+  - text: Pourquoi inotify est utilisé ? Il est important de comprendre les options avec lequelles le répertoire est "surveillé".
+    cost: 50
+kind: file
+files:
+  - bin/dead_drops 

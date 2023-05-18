@@ -1,0 +1,22 @@
+title: Do not strings me
+authors:
+  - Teddysbears
+description: |
+    Si vous êtes gentil il ne faut pas me strings.
+level: easy
+value:
+  initial: 500
+  decay: 100
+  minimum: 50
+flags:
+  - 24HIUT{D1d_Y0u_r34lly_5tr1nG_M3}
+tags:
+  - strings
+hints:
+  - text: Ne me strings pas par pitié !!!!
+    cost: 1
+  - text: Bon va falloir me strings là par contre.
+    cost: 50
+kind: file
+files:
+  - do_not_strings_me

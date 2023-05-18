@@ -1,0 +1,43 @@
+# Challenge
+title: Break The License 2/3
+authors:
+  - "[PandatiX](https://twitter.com/pandatix)"
+description: |
+    Je n'ai pas pris le temps de vous féliciter pour votre précédent travail, Agent C.
+    Voilà qui est fait.
+    
+    Néanmoins je ne viens pas avec une bonne nouvelle : depuis plusieurs jours, un nouveau système est en place, bien plus robuste.
+    Recommencez.
+    Bonne chance.
+level: medium
+value:
+  initial: 500
+  decay: 100
+  minimum: 50
+flags:
+  - 24HIUT{sYm3tric_c#yp7o_&_sym€tric_pr*ces5}
+tags:
+  - AES
+hints:
+  - text: L'utilisation de primitives cryptographiques symétriques ne signifie pas que le processus lui-même n'est pas symétrique, et donc réversible.
+    cost: 50
+  - text: Attention, le padding (PKCS) peut vous jouer des tours, tout comme la conversion UTF-16/UTF-8...
+    cost: 50
+kind: static+file
+files:
+  - code.zip
+connectionInfo: http://challenges.pandatix.dev:31002
+
+# Infra
+replicas: 1
+containers:
+  - name: license-server
+    image: registry.pandatix.dev/crypto/license-server:v2
+    ports:
+      - name: http
+        targetPort: 8080
+        port: 8081
+        nodePort: 32002
+        exposed: true
+
+# Via vurl : `curl http://challenges.pandatix.dev:32001 -k`

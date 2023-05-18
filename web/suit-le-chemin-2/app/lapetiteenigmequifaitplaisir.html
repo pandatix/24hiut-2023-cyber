@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mon Super Site Web - Petite enigme</title>
+		<link rel="stylesheet" href="style.css"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	</head>
+	<body>
+		<header id="header">
+			<a href="/">Home</a>
+			<div style="height: 20px; display: flex;">
+				<form action="/?page=article1.html" method="POST">
+					<a onclick="this.closest('form').submit(); return false;" style="cursor: pointer;">Article 1</a>
+					<input type="hidden" name="checksum" value="a33f83816187365c199092ce09f42a0f2d78698a2054e981c52bd1d026804119">
+				</form>
+				<form action="/?page=article2.html" method="POST">
+					<a onclick="this.closest('form').submit(); return false;" style="cursor: pointer;">Article 2</a>
+					<input type="hidden" name="checksum" value="724e65e10da7c7490cb63f5ed238a6f9d7382a6becf941a8c731422b457a794c">
+				</form>
+				<a href="https://superlogout.com/">Article secret</a>
+			</div>
+			<form action="/?page=login.html" method="POST">
+				<a onclick="this.closest('form').submit(); return false;" style="cursor: pointer;">Se connecter</a>
+				<input type="hidden" name="checksum" value="f7df8ca1f6a5b4e55cc08d43d079af1235a1a87cf8799fe7813f42440378ef4a">
+			</form>
+		</header>
+		<main>
+			<h2>Pour savoir où se trouve le fichier à récupérer, il faut résoudre l'énigme suivante :</h2>
+			<p>
+				<ul>
+					<li>Quel est le nom de l'organisme qui publie régulièrement un classement des vulnérabilités web les plus présentes sur internet ? (Utiliser la réponse en mettant toutes les lettres en majuscule)</li>
+					<li>A quelle position se trouve la catégorie correspondant à la vulnérabilité que vous exploitez pour ce challenge (dans le classement le plus récent) ?</li>
+					<li>Quel est le nom de la fonction PHP qui permet de faire du rechercher/remplacer grâce à une expression régulière ? (Utiliser la réponse en mettant toutes les lettres en majuscule et en conservant l'underscore si besoin)</li>
+					<li>Concaténer toutes les réponses obtenues aux questions précédentes et calculer le hash SHA256 de la chaine obtenue.</li>
+					<li>Le flag se trouve toujours dans le dossier personnel de l'utilisateur qui lance le serveur web puis dans un dossier nommé avec la réponse obtenue au point précédent et s'appelle toujours drapeau.txt</li>
+				</ul>
+			</p>
+		</main>
+	</body>
+</html>

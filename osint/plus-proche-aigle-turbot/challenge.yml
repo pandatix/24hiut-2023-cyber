@@ -1,0 +1,26 @@
+title: Plus proche de l'aigle que du turbot 1/3
+authors:
+  - "[baddhack](https://twitter.com/baddhack)"
+description: |
+  L'autre jour j'étais pris d'une certaine nostalgie, j'ai donc ressorti un ancien disque dur contenant des photos de vacances. Il contient mon premier voyage sur les traces de mes ancêtres. Regarde cette photo de moi, c'était lors d'un séjour dans la capitale.
+  
+  Néanmoins ce n'est pas dans cette ville que j'ai passé mon été. Je me souviens vaguement des rues dans lesquelles je me baladais car j'étais encore jeune. Par contre, je n'oublierai jamais mon étonnement quand j'ai croisé ce terrain de foot à plus de 1100 mètres d'altitude ! C'était le bonheur absolu !
+  
+  Pourrais-tu retrouver le nom de cette ville ?
+level: medium
+value:
+  initial: 500
+  decay: 100
+  minimum: 50
+flags:
+  - 24HIUT{Amedi}
+  - 24HIUT{Amediyah}
+  - 24HIUT{Amadia}
+topics:
+  - GEOINT
+hints:
+  - text: Connais-tu Overpass Turbo ?
+    cost: 50
+kind: file
+files:
+  - image.jpg

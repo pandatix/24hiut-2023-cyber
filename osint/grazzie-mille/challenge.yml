@@ -1,0 +1,20 @@
+title: Grazie mille 3/3
+authors:
+  - "[baddhack](https://twitter.com/baddhack)"
+description: |
+  Merci d'avoir retrouvé ce restaurant ! Cela me rappelle de bons souvenirs ! Je suis vraiment fier de ma région.
+
+  Vous ai-je dis que j'étais aussi passionné d'histoire ? Lorsque nous nous rendions à la capitale, j'adorais me balader autour de ce site mondialement reconnu.
+
+  Sais-tu qui a découvert les premières sources historiques mentionnant ce lieu ?
+level: easy
+value:
+  initial: 500
+  decay: 100
+  minimum: 50
+flags:
+  - 24HIUT{Paolo Matthiae}
+hints:
+  - text: Êtes-vous dans la bonne capitale ?
+    cost: 50
+kind: none

@@ -1,0 +1,24 @@
+title: Sen to Chihiro no kamikakushi
+authors:
+  - "[hashp4](https://twitter.com/hashp4_)"
+  - "[baddhack](https://twitter.com/baddhack)"
+description: |
+   Notre équipe d'enquêteurs traque un nouveau cybercriminel international. Apparemment, il s'appelle "土方剛史". Nous travaillons avec les forces de l'ordre du monde entier pour l'attraper. Pouvez-vous trouver sa dernière destination ?
+
+   Format de flag : 24HIUT{email_city} avec la ville en anglais. Tout doit être en minuscule.
+   Exemple : 24HIUT{john.doe@yahoo.com_paris} 
+level: hard
+value:
+  initial: 500
+  decay: 100
+  minimum: 50
+flags:
+  - 24HIUT{h.t4kesh1@gmail.com_narita}
+topics:
+  - OSINT
+hints:
+  - text: Est-ce qu'il possède des comptes sur d'autres plateformes ? Avez-vous pu récupérer un nouvel email ?
+    cost: 50
+  - text: Avez-vous pu retrouver ses fichiers personels ? Des indices sont présent sur la vidéo...
+    cost: 50
+kind: none
